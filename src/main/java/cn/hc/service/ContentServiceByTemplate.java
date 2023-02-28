@@ -13,15 +13,15 @@ public class ContentServiceByTemplate {
     @Autowired
     private MongoTemplate mongoTemplate;
 
-    // public List<Content> selectContentList() {
-    //     return contentRepository.findAll();
-    // }
-    //
-    // public Content insertContent(Content content) {
-    //     return contentRepository.insert(content);
-    // }
-    //
-    // public Content updateContent(Content content) {
-    //     return contentRepository.
-    // }
+     public List<Content> selectContentList() {
+         return mongoTemplate.findAll();
+     }
+
+     public Content insertContent(Content content) {
+         return contentRepository.insert(content);
+     }
+
+     public Content updateContent(Content content) {
+         return contentRepository.
+     }
 }
