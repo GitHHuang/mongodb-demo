@@ -15,4 +15,7 @@ public interface GameService {
     public Game insertGame(Game game) throws Exception;
 
     public Game updateGame(Game game) throws Exception;
+
+    public void deleteGame(String id) throws Exception;
+
 }

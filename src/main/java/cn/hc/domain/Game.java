@@ -10,7 +10,7 @@ import java.io.Serializable;
 import java.util.Date;
 
 @Data
-@Document(collection = "game")
+@Document(collection = "games")
 public class Game implements Serializable {
     @Id
     private String id;

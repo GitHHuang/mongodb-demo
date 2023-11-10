@@ -54,4 +54,10 @@ public class GameController {
         return "保存成功";
     }
 
+    @DeleteMapping("/game/{id}")
+    public String delGame(@PathVariable("id") String id) {
+        gameServiceByRepository.deleteGame(id);
+        return "删除成功";
+    }
+
 }

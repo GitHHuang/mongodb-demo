@@ -12,6 +12,9 @@ import org.springframework.data.domain.Page;
 
 import java.util.List;
 
+/**
+ * JPA模式，不够灵活
+ */
 @Service
 public class GameServiceByRepository implements GameService {
     @Autowired
@@ -46,5 +49,10 @@ public class GameServiceByRepository implements GameService {
             throw new Exception("更新文档时ID不能为空");
         }
         return gameRepository.save(game);
+    }
+
+    @Override
+    public void deleteGame(String id) {
+        gameRepository.deleteById(id);
     }
 }
